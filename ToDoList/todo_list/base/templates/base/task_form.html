@@ -1,0 +1,18 @@
+{%   extends 'base/main.html'  %}
+
+{%   block content   %}
+
+<div class="header-bar">
+    <a  style="color: aliceblue;text-decoration: none;"  href="{%  url 'tasks'   %}">&#8592;Go Back</a>
+</div>
+
+
+<div class="card-body">
+    <form action="" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input class="button" type="submit" value="submit">
+    
+    </form>    
+</div>
+{%   endblock content   %}
