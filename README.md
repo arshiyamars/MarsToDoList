@@ -1,2 +1,2 @@
 # MarsToDoList
-the django to do list 
+the django todo list 
